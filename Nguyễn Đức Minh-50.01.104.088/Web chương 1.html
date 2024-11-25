@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FFCCFF;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 15px 20px;
+            display: block;
+        }
+        nav a:hover {
+            background-color: #555;
+        }
+        section {
+            padding: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        .form-group input, .form-group textarea {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .form-group button {
+            padding: 10px 20px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        .form-group button:hover {
+            background-color: #555;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Personal Website</h1>
+    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#study-plan">Study Plan</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section id="home">
+        <h2>About Me</h2>
+        <p><strong>Họ và Tên:</strong> Nguyễn Đức Minh </p>
+        <p><strong>Ngày Sinh:</strong> 19/11/2006</p>
+        <p><strong>Số Điện Thoại:</strong> 0369967463</p>
+        <p><strong>Địa Chỉ:</strong> 280 An Dương Vương, Phường 4, Quận 5, Hồ Chí Minh, Vietnam</p>
+        <p><strong>Email:</strong> ndm1911minh43@gmail.com</p>
+    </section>
+
+    <section id="study-plan">
+        <h2>Study Plan</h2>
+        <ul>
+            <li>Tuần 1: Study HTML and CSS.</li>
+            <li>Tuần 2: Learn JavaScript basics.</li>
+            <li>Tuần 3: Practice building small projects.</li>
+            <li>Tuần 4: Learn backend technologies.</li>
+        </ul>
+    </section>
+
+    <section id="hobbies">
+        <h2>Sở Thích </h2>
+        <ul>
+            <li>Đọc Sách </li>
+            <li>Du Lịch </li></li>
+            <li>Chơi Game </li>
+            <li>Chơi Thể Thao </li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" placeholder="Write your message" rows="5" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <iframe 
+            src="https://www.google.com/maps/place/280+%C4%90.+An+D%C6%B0%C6%A1ng+V%C6%B0%C6%A1ng,+Ph%C6%B0%E1%BB%9Dng+4,+Qu%E1%BA%ADn+5,+H%E1%BB%93+Ch%C3%AD+Minh,+Vi%E1%BB%87t+Nam/@10.761394,106.6796085,17z/data=!3m1!4b1!4m6!3m5!1s0x31752f1b91dddf0b:0xee68fc57ab3c952!8m2!3d10.761394!4d106.6821834!16s%2Fg%2F11fm47q50l?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoJLDEwMjExMjM0SAFQAw%3D%3D"
+            allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Personal Website. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>
